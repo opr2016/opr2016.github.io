@@ -16,7 +16,7 @@ description: Finding the best organic supplements
 owner:
   name: Organic Protein Reviews
   email: proteinorganic@gmail.com
-  url: http://www.organicproteinreviews.com
+  url: http://organicproteinreviews.com
 first_published: 2016  # if migrating another site, the year of your first publish
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://organicproteinreviews.com" # the base hostname & protocol for your site
