@@ -1,9 +1,9 @@
 ---
 priority: 0.6
 title: Cocoa Powder and Unflavored Organic Protein
-excerpt: An example of a and b
+excerpt: Add some flavor to your organic protein shakes!
 categories: blog
-background-image: cocoa-bean.png
+background-image: cocoa-bean.jpg
 tags:
   - Organic Whey
   - Organic Casein
