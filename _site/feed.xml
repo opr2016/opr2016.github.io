@@ -5,9 +5,41 @@
     <description>Finding the best organic supplements</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Apr 2016 04:16:10 -0700</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 04:16:10 -0700</lastBuildDate>
+    <pubDate>Sat, 02 Apr 2016 10:54:29 -0700</pubDate>
+    <lastBuildDate>Sat, 02 Apr 2016 10:54:29 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Cocoa Powder and Unflavored Organic Protein</title>
+        <description>&lt;p&gt;Unflavored organic protein poweder shakes are some of the most pure, natural sources for the protein you need. I like to make a post-workout shake, for example, with only two ingredients:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Organic, grass-fed whey powder&lt;/li&gt;
+  &lt;li&gt;Organic, grass-fed milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It doesn’t get much simpler than that! I like knowing that my post-workout nutrition contains only the natural ingredients I want.&lt;/p&gt;
+
+&lt;p&gt;But what about flavor? To me, the above (organic whey protein + organic milk) tastes like “thick milk”, which is to say that it tastes the same way plain milk tastes, but more so. Maybe the right analogy is that the shake flavor is to milk what mango nectar is to mango juice; it’s just a more intense version of the same flavor.&lt;/p&gt;
+
+&lt;p&gt;I like that taste, but sometimes I want to drink an organic protein shake with a different flavor. My go-to ingredient for that is raw cacao; specifically, I like &lt;a href=&quot;http://www.amazon.com/Healthworks-Certified-Organic-Cacao-Powder/dp/B00EKLPLU4&quot;&gt;Healthworks Cacao Powder&lt;/a&gt;, which is a USDA certified organic raw cacao powder. In fact, the only ingredient is raw cacao! It blends well, so I just put a small scoop of it in a shaker bottle with my organic whey and my organic milk. It tastes great! I’d describe it as tasting like chocolate milk without the sugar.&lt;/p&gt;
+
+&lt;p&gt;In fact, the powder is completely sugar free. I use about a tablespoon per shake, so the total nutritional footprint of the powder is negligible: Less than a gram of fat, and about 3.6 grams of carbs. The serving size on the packages is 2.5 tbsp with 32 servings per container; since I only use about 1 tbsp, though, I get 80 servings per container. That’s really what I’d recommend: More than a tablespoon, and the cocoa flavor becomes really powerful, almost overwhelming!&lt;/p&gt;
+
+&lt;p&gt;So if you like organic protein shakes but want to add a natural flavor, try cacao powder; I think it’s a great alternative to “plain milk” tasting shakes!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Apr 2016 00:00:00 -0700</pubDate>
+        <link>/blog/cocoa-powder.html</link>
+        <guid isPermaLink="true">/blog/cocoa-powder.html</guid>
+        
+        <category>Organic Whey</category>
+        
+        <category>Organic Casein</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Guide for new posts</title>
@@ -363,34 +395,6 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
         <pubDate>Fri, 01 Sep 2000 00:00:00 -0700</pubDate>
         <link>/works/works-example3.html</link>
         <guid isPermaLink="true">/works/works-example3.html</guid>
-        
-        <category>This</category>
-        
-        <category>That</category>
-        
-        <category>The other</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Project X</title>
-        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;18% increase in M, measured by N&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
-
-&lt;p&gt;Project X involved ….&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Jan 2000 00:00:00 -0800</pubDate>
-        <link>/works/works-example1.html</link>
-        <guid isPermaLink="true">/works/works-example1.html</guid>
         
         <category>This</category>
         
