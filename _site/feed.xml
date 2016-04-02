@@ -3,10 +3,10 @@
   <channel>
     <title>Organic Protein Reviews</title>
     <description>Finding the best organic supplements</description>
-    <link>http://organicproteinreviews.com/</link>
-    <atom:link href="http://organicproteinreviews.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Apr 2016 04:06:51 -0700</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 04:06:51 -0700</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Apr 2016 04:08:54 -0700</pubDate>
+    <lastBuildDate>Sat, 02 Apr 2016 04:08:54 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -266,8 +266,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 26 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://organicproteinreviews.com/topics/template.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/topics/template.html</guid>
+        <link>/topics/template.html</link>
+        <guid isPermaLink="true">/topics/template.html</guid>
         
         
         <category>topics</category>
@@ -279,8 +279,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
         <description>&lt;p&gt;This is friggin crazy if that’s how it is.&lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Sep 2006 00:00:00 -0700</pubDate>
-        <link>http://organicproteinreviews.com/topics/my-vacation/test-funfun.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/test-funfun.html</guid>
+        <link>/topics/my-vacation/test-funfun.html</link>
+        <guid isPermaLink="true">/topics/my-vacation/test-funfun.html</guid>
         
         
         <category>topics</category>
@@ -294,8 +294,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
         <description>&lt;p&gt;Mozart’s home.&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Sep 2006 00:00:00 -0700</pubDate>
-        <link>http://organicproteinreviews.com/topics/my-vacation/test-vienna.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/test-vienna.html</guid>
+        <link>/topics/my-vacation/test-vienna.html</link>
+        <guid isPermaLink="true">/topics/my-vacation/test-vienna.html</guid>
         
         
         <category>topics</category>
@@ -309,8 +309,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
         <description>&lt;p&gt;Here we go.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Aug 2006 00:00:00 -0700</pubDate>
-        <link>http://organicproteinreviews.com/topics/my-vacation/</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/</guid>
+        <link>/topics/my-vacation/</link>
+        <guid isPermaLink="true">/topics/my-vacation/</guid>
         
         
         <category>topics</category>
@@ -333,8 +333,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
 &lt;p&gt;Project Y involved ….&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jan 2001 00:00:00 -0800</pubDate>
-        <link>http://organicproteinreviews.com/works/works-example2.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example2.html</guid>
+        <link>/works/works-example2.html</link>
+        <guid isPermaLink="true">/works/works-example2.html</guid>
         
         <category>This</category>
         
@@ -361,8 +361,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
 &lt;p&gt;Project Z involved ….&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Sep 2000 00:00:00 -0700</pubDate>
-        <link>http://organicproteinreviews.com/works/works-example3.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example3.html</guid>
+        <link>/works/works-example3.html</link>
+        <guid isPermaLink="true">/works/works-example3.html</guid>
         
         <category>This</category>
         
@@ -389,8 +389,8 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
 &lt;p&gt;Project X involved ….&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Jan 2000 00:00:00 -0800</pubDate>
-        <link>http://organicproteinreviews.com/works/works-example1.html</link>
-        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example1.html</guid>
+        <link>/works/works-example1.html</link>
+        <guid isPermaLink="true">/works/works-example1.html</guid>
         
         <category>This</category>
         
