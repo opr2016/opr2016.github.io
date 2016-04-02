@@ -1,0 +1,109 @@
+# Welcome to Jekyll!
+
+
+# In addition to these settings, there is a file _data/tokens-template.yml
+# that you'll want to customize for your site. It's named 'tokens' because
+# that was it's original purpose, but because tokens.yml is .gitexcluded, it's
+# a good place to store your site-specific data that you'd rather not have
+# forked or cloned. Of course, that means you'd want to back it up elsewhere.
+
+# Also, for your post bylines, add author info for yourself in `_data/authors.yml`.
+# (Using that method instead of site.owner, in case your posts get cloned with your repo.)
+
+# Site settings
+title: Organic Protein Reviews 
+description: Finding the best organic supplements
+owner:
+  name: Organic Protein Reviews
+  email: proteinorganic@gmail.com
+  url: http://www.organicproteinreviews.com
+first_published: 2016  # if migrating another site, the year of your first publish
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://organicproteinreviews.com" # the base hostname & protocol for your site
+
+# on landing page
+# - set the greeting only if you want to display the first green section
+greeting:
+  title: Welcome!
+  text: "Hi! I'm Slater, and OrganicProteinReviews is my site for finding, comparing, and reviewing orgainc protein supplements. Back in 2014, I started paying attention to the ingredients in my protein powders, and I didn't like what I saw: Artificial sweeteners, cellulose gums, alkalai-processed cocoa, and a ton of chemicals I didn't understand. I decided I needed to change my nutrition to *natural*, *organic*, *minimally processed* protein sources, and began researching all the organic protein supplements I coul find.  This site is my way of saving and sharing that information! I hope it's helpful to you, and that you can use this site to find a healthy, natural protein source that fits your health and fitness goals!"
+
+# - title for your blog's featured posts
+features-title: Featured topics
+# - displayed at the bottom
+closing-head: Thanks for visiting
+closing-para: Feel free to get in touch. Cheers!
+
+# choose where to put back and next links:
+# top, bottom, both, none
+navlinks: bottom
+
+# expecting more works? mark your list as in-progress
+works_in_progress: yes
+
+# on all pages (and the first three you list display with greeting, if included)
+social:
+  # twitter: https://twitter.com/arkadianriver
+  # github: https://github.com/arkadianriver
+  # linkedin-square: https://linkedin.com/in/arkadianriver
+  # facebook-official: https://facebook.com/gary.faircloth
+  # google-plus-square: https://plus.google.com/u/0/+GaryFaircloth
+  email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+permalink: /:categories/:title.html
+markdown: kramdown
+#sass:
+#  style: compressed
+exclude: ['site.bat']
+include: ['_pages','.htaccess']
+defaults:
+  - scope:
+      path: _pages
+    values:
+      layout: page
+      #permalink: /:slug/ # dunna work. See github.com/jekyll/jekyll/issues/2280
+  - scope:
+      path: _posts
+    values:
+      layout: post
+  - scope:
+      path: _drafts
+    values:
+      layout: post
+
+# to initialize arrays in assignments (assign myarr = site.empty_array)
+# (easier to grok than assign myarr = '' | split',')
+empty_array: []

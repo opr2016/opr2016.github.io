@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organic Protein Reviews</title>
+    <description>Finding the best organic supplements</description>
+    <link>http://organicproteinreviews.com/</link>
+    <atom:link href="http://organicproteinreviews.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Apr 2016 03:46:49 -0700</pubDate>
+    <lastBuildDate>Sat, 02 Apr 2016 03:46:49 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Guide for new posts</title>
+        <description>&lt;h2 id=&quot;required&quot;&gt;Required&lt;/h2&gt;
+
+&lt;h3 id=&quot;categories&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;IF&lt;/em&gt; it’s a post, the categories array is required with at least
+&lt;em&gt;the first element&lt;/em&gt; set to the permalink name of its parent page
+(so that breadcrumbs work).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;topics ...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The two top-level categories with provided index pages are &lt;code class=&quot;highlighter-rouge&quot;&gt;topics&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;works&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Advanced:&lt;/p&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;The following settings will list the first topic in the subcategory
+in the topics index and (soon) will create back/next links within the
+subcategory.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;To start, create a first post for the sub-category, but with a permalink.
+The category list can be space-delimited on one line or in a bulleted list.
+Note that the category names must exactly match the permalink.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;  &lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;topics my-great-vacation&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/topics/my-great-vacation/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;The site permalink would be:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/topics/my-great-vacation/index.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;For topics within that sub-category, add the additional category and no
+permalink:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;  &lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;topics my-great-vacation&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;resulting in: &lt;code class=&quot;highlighter-rouge&quot;&gt;/topics/my-great-vacation/topic-title.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;nobullet&quot;&gt;
+  &lt;li&gt;(coming soon) This creates back and next links.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;excerpt&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;excerpt&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;You’ll wanna provide an excerpt in front-matter, because relying on jekyll to
+get the excerpt from the body has too many caveats. The excerpt is truncated
+as necessary in references, so it can be as long as you want. But, it’s also
+displayed, centered, right under the topic title (in all caps).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yada yada&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;permalink&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;IF&lt;/em&gt; it’s a parent page, use a permalink for it’s new category, but don’t specify
+that new category for this parent page itself, because it becomes the index
+that a breadcrumb link would pop up to, ie: &lt;code class=&quot;highlighter-rouge&quot;&gt;/new-category/index.html&lt;/code&gt;. Also see
+&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/new-category/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;title&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Title for &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;title/&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h1/&amp;gt;&lt;/code&gt;. For this and all other fields refer to Yaml
+restrictions on when you need to quote the value.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;My interesting topic&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;presentation-options&quot;&gt;Presentation options&lt;/h2&gt;
+
+&lt;h3 id=&quot;author&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you want the article to be attributed to an author, specify a name that
+corresponds to a key in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data\authors.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;key_name&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;background-image&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;background-image&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you want a larger title block with a background image, specify it here.
+If it’s in the &lt;code class=&quot;highlighter-rouge&quot;&gt;/images/&lt;/code&gt; folder, specify just the name;
+otherwise specify the folder relative to your jekyll root, starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;.
+If it’s a remote image, begin the name with &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;.
+Use a high resolution image, if possible,
+for when viewed full screen. Once displayed, you’ll wanna slowly resize your
+browser or use its developer tools to see how the image responds for all &lt;code class=&quot;highlighter-rouge&quot;&gt;@media&lt;/code&gt;
+breakpoints and crop it as necessary.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;imagefile.png&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;icon&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;For the featured articles on the main page, if you want an icon other than
+the heart icon, specify the &lt;code class=&quot;highlighter-rouge&quot;&gt;font-awesome&lt;/code&gt; icon identifier (just the text after &lt;code class=&quot;highlighter-rouge&quot;&gt;fa-&lt;/code&gt;).
+See the &lt;a href=&quot;/topics/icons.html&quot;&gt;font-awesome icons&lt;/a&gt;
+topic for a list of available icons.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;industry&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;layout&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;For both posts and pages, there’s no need to specify the layout.
+Specifying the layout is optional because defaults
+are set in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to set the layout based on the folder it’s in
+(&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages&lt;/code&gt;). The layout &lt;em&gt;is&lt;/em&gt; useful for pages outside of these folders,
+however.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page|post&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;options&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;options&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The options allow you to customize the page somewhat.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;minihead&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;# as minimal a title as possible, and no date printed&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;fullwidth&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# leaving only a tiny margin on all media sizes&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nocomment&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# disable disqus comments for this post&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nomenu&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# for pages, don&#39;t add to the menu&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nolanding&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# for pages and featured posts, don&#39;t add to the landing page&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note that disqus comments are not displayed on &lt;code class=&quot;highlighter-rouge&quot;&gt;works&lt;/code&gt; posts.&lt;/p&gt;
+
+&lt;h2 id=&quot;ordering-and-site-map-options&quot;&gt;Ordering and site map options&lt;/h2&gt;
+
+&lt;h3 id=&quot;changefreq&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;changefreq&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The default change frequency for all pages in the site map is &lt;code class=&quot;highlighter-rouge&quot;&gt;monthly&lt;/code&gt;.
+Depending on how often you think you’ll edit a page, you can set the page
+change frequency. &lt;a target=&quot;_blank&quot; href=&quot;https://www.v9seo.com/blog/2011/12/27/sitemap-xml-why-changefreq-priority-are-important/&quot;&gt;Here’s a good guide&lt;/a&gt; on when to use the available values.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;changefreq&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;weekly&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;key&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;All files in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages&lt;/code&gt; folder are displayed in the nav menu unless you
+set the &lt;code class=&quot;highlighter-rouge&quot;&gt;nomenu&lt;/code&gt; option.
+Use &lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt; to specify the order you want the pages listed in the nav menu.
+Values are sorted in ascending order.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;lastmod-date&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lastmod&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you want the site map &lt;code class=&quot;highlighter-rouge&quot;&gt;lastmod&lt;/code&gt; setting to be updated, you can set one or both of
+these to your new modified date as &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD HH:MM:SS +/-TTTT&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;lastmod&lt;/code&gt; has priority).
+If you use &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;, the date shown on the page is also modified, overriding the
+date in the filename. The timestamp is assumed to be UTC unless you specify the
+time zone offset afterward.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;lastmod&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2016-03-13 23:11:00&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2016-01-01 00:00:00 -0800&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;priority&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;priority&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;priority&lt;/code&gt; to specify two things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the grouping in the works index&lt;/li&gt;
+  &lt;li&gt;the site map priority&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;priority&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0.8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the works index, the works are grouped by priority, listed by descending priority
+and by descending date within each priority.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; For now, &lt;code class=&quot;highlighter-rouge&quot;&gt;works&lt;/code&gt; posts &lt;em&gt;must&lt;/em&gt; have a priority set for the ordering
+          to work. If you get a “&lt;code class=&quot;highlighter-rouge&quot;&gt;can&#39;t compare float with nil&lt;/code&gt;” error in your
+          jekyll build, there’s a missing priority somewhere.&lt;/p&gt;
+
+&lt;p&gt;Because the value is used to set the site map priority,
+it must be set to a value between 0 and 1.0.
+I have three groups of works, using priorities 0.7, 0.6, and 0.5.
+None as high as featured posts, but then, I’m not looking for a job right now. ;-)&lt;/p&gt;
+
+&lt;p&gt;Default priorities in the &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.0&lt;/code&gt; - Landing page&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;0.9&lt;/code&gt; - Featured posts&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;0.7&lt;/code&gt; - Other posts&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;0.5&lt;/code&gt; - Pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sitemapexclude&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap_exclude&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Set to &lt;code class=&quot;highlighter-rouge&quot;&gt;yes&lt;/code&gt; if you want to exclude a page from the sitemap.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;sitemap_exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yes&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;tags&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;For &lt;em&gt;topics&lt;/em&gt; posts, the only tag that has an effect right now is &lt;code class=&quot;highlighter-rouge&quot;&gt;featured&lt;/code&gt;,
+which adds it to the top of the &lt;code class=&quot;highlighter-rouge&quot;&gt;/topics/&lt;/code&gt; page. The most recent eight
+featured posts are also added to the main landing page.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;featured&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For &lt;em&gt;works&lt;/em&gt; posts, the tags become a listing of skills demonstrated. For example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;C&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Windows DLL&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SGML&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/skills.png&quot; alt=&quot;web page display of the preceding tags&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can add the &lt;code class=&quot;highlighter-rouge&quot;&gt;featured&lt;/code&gt; tag to a work if you want it to appear on the main landing page.
+The &lt;code class=&quot;highlighter-rouge&quot;&gt;featured&lt;/code&gt; tag is excluded from the list of skills on the page and &lt;code class=&quot;highlighter-rouge&quot;&gt;works&lt;/code&gt; index.
+However, its page priority overrides the standard priority of featured posts in the site map.&lt;/p&gt;
+
+&lt;h2 id=&quot;css-and-script-support&quot;&gt;CSS and Script support&lt;/h2&gt;
+
+&lt;h3 id=&quot;includes&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;includes&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;If your page needs to include stylesheets or scripts, provide ‘em as either
+local or remote URLs. Prefix remote urls with &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;, not &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;. Stylesheets
+are included in the header and scripts at the bottom before the body closes.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;style-includes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/local/path/to/stylesheet.css&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;//remote.com/url/to/stylesheet.css&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;script-includes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/local/path/to/script.js&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;//remote.com/url/to/script.js&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;style-script&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style, script&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;These are useful when you want to embed styles and scripts outside of the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt; area.
+Use the yaml &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; indented block to ensure line breaks are preserved.
+The styles are included in the header below stylesheet includes;
+scripts are included at the bottom below script includes.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;/* some css block here */&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;.some-class {&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;somestyle: definition;&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;// some script block here...&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;$(document).ready(function(){&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 26 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://organicproteinreviews.com/topics/template.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/topics/template.html</guid>
+        
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Fun Fun day</title>
+        <description>&lt;p&gt;This is friggin crazy if that’s how it is.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Sep 2006 00:00:00 -0700</pubDate>
+        <link>http://organicproteinreviews.com/topics/my-vacation/test-funfun.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/test-funfun.html</guid>
+        
+        
+        <category>topics</category>
+        
+        <category>my-vacation</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Vienna</title>
+        <description>&lt;p&gt;Mozart’s home.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Sep 2006 00:00:00 -0700</pubDate>
+        <link>http://organicproteinreviews.com/topics/my-vacation/test-vienna.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/test-vienna.html</guid>
+        
+        
+        <category>topics</category>
+        
+        <category>my-vacation</category>
+        
+      </item>
+    
+      <item>
+        <title>Fun!</title>
+        <description>&lt;p&gt;Here we go.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Aug 2006 00:00:00 -0700</pubDate>
+        <link>http://organicproteinreviews.com/topics/my-vacation/</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/topics/my-vacation/</guid>
+        
+        
+        <category>topics</category>
+        
+        <category>my-vacation</category>
+        
+      </item>
+    
+      <item>
+        <title>Project Y</title>
+        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;24% increase in M, measured by N&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;p&gt;Project Y involved ….&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2001 00:00:00 -0800</pubDate>
+        <link>http://organicproteinreviews.com/works/works-example2.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example2.html</guid>
+        
+        <category>This</category>
+        
+        <category>That</category>
+        
+        <category>The other</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>Project Z</title>
+        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;19% increase in M, measured by N&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;p&gt;Project Z involved ….&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Sep 2000 00:00:00 -0700</pubDate>
+        <link>http://organicproteinreviews.com/works/works-example3.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example3.html</guid>
+        
+        <category>This</category>
+        
+        <category>That</category>
+        
+        <category>The other</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>Project X</title>
+        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;18% increase in M, measured by N&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;p&gt;Project X involved ….&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jan 2000 00:00:00 -0800</pubDate>
+        <link>http://organicproteinreviews.com/works/works-example1.html</link>
+        <guid isPermaLink="true">http://organicproteinreviews.com/works/works-example1.html</guid>
+        
+        <category>This</category>
+        
+        <category>That</category>
+        
+        <category>The other</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+  </channel>
+</rss>
