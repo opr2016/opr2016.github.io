@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>/</loc>
-      <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+      <lastmod>2016-04-03T07:35:56-07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
     <url>
       <loc>/blog/cocoa-powder.html</loc>
         <lastmod>2016-04-02T00:00:00-07:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+      <loc>/blog/unflavored-grid.html</loc>
+        <lastmod>2016-04-01T00:00:00-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -50,43 +56,43 @@
     </url>
     <url>
       <loc>/blog/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/contact-success/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/contact-success/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/contact/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/credits/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>/topics/</loc>
-        <lastmod>2016-04-02T10:58:16-07:00</lastmod>
+        <lastmod>2016-04-03T07:35:56-07:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
