@@ -5,9 +5,37 @@
     <description>Finding the best organic supplements</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Apr 2016 23:49:16 -0700</pubDate>
-    <lastBuildDate>Sun, 17 Apr 2016 23:49:16 -0700</lastBuildDate>
+    <pubDate>Sun, 24 Apr 2016 11:16:33 -0700</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2016 11:16:33 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Concentrate vs Isolate</title>
+        <description>&lt;p&gt;A question I sometimes get asked is why organic whey protein powders tend to be whey protein &lt;strong&gt;concentrate&lt;/strong&gt; rather than whey protain &lt;strong&gt;isolate&lt;/strong&gt;. Putting aside the organic question for a moment, there are legitimate reasons why you might prefer concentrate over isolate or vice versa. Concentrate is cheaper, but has a lower protein percentage per gram of powder. Isolate is more expensive, but is has more protein per gram of powder. There is also a debate around absorbtion rates, lactose
+intolerance, etc. In short, there are lots of reasons why you might have a preference.&lt;/p&gt;
+
+&lt;p&gt;So given that, it’s a bit of a mystery at first why organic whey protein powders tend to &lt;strong&gt;only&lt;/strong&gt; be in concentrate form. So I thought I’d share what I learned about organic protein powder processing.&lt;/p&gt;
+
+&lt;p&gt;In short, making whey protein isolate requires more processing than does making whey protein concentrate. Therefore, isolate is more of a “processed food” than is concentrate. Since organic protein powders strive to be minimally processed, it makes sense that they come in concentrate form rather than isolate. For example, Source Organic says:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Source Organic Whey is a whey protein concentrate because the extra heat and processing required to create an isolate would denature the protein and cause the loss of valuable co-factors and omega-3 fatty acids naturally present in Source Organic Whey. There is no organic whey protein isolate available on the market.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This makes sense to me. As someone who wants a minimally processed organic protein powder, I’d be much happier with an organic whey protein concentrate than I would with taking some great organic whey and then over-processing it to create whey protein isolate.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
+        <link>/blog/concentrate-vs-isolate.html</link>
+        <guid isPermaLink="true">/blog/concentrate-vs-isolate.html</guid>
+        
+        <category>Organic Whey</category>
+        
+        <category>Protein Powder</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>My Nutrition Routine</title>
@@ -623,34 +651,6 @@ scripts are included at the bottom below script includes.&lt;/p&gt;
         <pubDate>Mon, 01 Jan 2001 00:00:00 -0800</pubDate>
         <link>/works/works-example2.html</link>
         <guid isPermaLink="true">/works/works-example2.html</guid>
-        
-        <category>This</category>
-        
-        <category>That</category>
-        
-        <category>The other</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Project Z</title>
-        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;19% increase in M, measured by N&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
-
-&lt;p&gt;Project Z involved ….&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Sep 2000 00:00:00 -0700</pubDate>
-        <link>/works/works-example3.html</link>
-        <guid isPermaLink="true">/works/works-example3.html</guid>
         
         <category>This</category>
         
